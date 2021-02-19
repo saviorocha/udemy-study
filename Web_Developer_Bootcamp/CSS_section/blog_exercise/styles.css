@@ -1,0 +1,41 @@
+body {
+	margin: 15px auto;
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+	border: 20px solid #b2b2b2;
+}
+
+div.content p {
+	font-family: 'Baloo Thambi 2', cursive;
+	text-align: justify;
+}
+
+p.vertical-bar {
+	border-left: 5px solid #b2b2b2;
+	padding-left: 5px;
+}
+
+hr {
+	border-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.3);
+	
+}
+
+h2.date {
+	color: #699bd3;
+	text-transform: uppercase;
+	margin-top: 1px;
+	font-size: 17px; 
+	letter-spacing: 0.2rem;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	color: #020119;
+	font-size: 2.0rem;
+}
+
+div.content {
+	margin-bottom: 20px;
+}

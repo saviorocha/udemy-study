@@ -1,0 +1,23 @@
+h1 {
+	color: #41107c;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+	border: 1px solid rgb(255, 80, 100);
+}
+
+li {
+	color: rgb(240,100,100);
+}
+
+h4 {
+	color: rgba(0,200,45,.7);
+	background: rgb(255, 100, 50);
+}
+
+body {
+	background: pink;	
+	/*background: url(https://cdn.pixabay.com/photo/2016/07/14/09/04/texture-1516370__340.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
