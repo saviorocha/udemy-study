@@ -1,0 +1,95 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+
+  /* -------------------------------- */
+
+  /* display flex */
+  /* possui um eixo principal (main) e um eixo secundário (cross) */
+  display: flex;
+
+  /* -------------------------------- */
+
+  /* flex-direction - altera a direção do eixo principal */
+  /* linha; fica como row, e da esquerda para a direita, por padrão */
+  flex-direction: row;
+  flex-direction: row-reverse;
+
+  /* coluna - vertical */
+  flex-direction: column;
+  flex-direction: column-reverse;
+
+  /* -------------------------------- */
+
+  /* justify content - posicionamento dos itens no eixo principal */
+  flex-direction: row;
+  flex-direction: column;
+
+  justify-content: flex-start; /* itens do começo para o final da flex-direction do contaienr */
+  justify-content: flex-end; /* itens do final para o começo da flex-direction do container */
+  justify-content: center; /* no centro do container */
+  justify-content: space-between; /* espaço distribuído entre os elementos de uma ponta do container até a outra*/
+  justify-content: space-around; /* dá (aproximadamente) a mesma quantidade de espaço entre os elementos */
+  justify-content: space-evenly; /* dá exatamente a mesma quantidade de espaço */
+
+  /* -------------------------------- */
+
+  /* flex-wrap - determina como os elementos vão se "encaixar" no container, alterando o eixo secundário */
+  /* justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap; */
+
+  /* -------------------------------- */
+
+  /* align-itens - posicionamento dos itens no eixo secundário */
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: flex-start; /* itens no começo do eixo secundário - nesse caso, de baixo para cima */
+  align-items: flex-end; /* itens no final do eixo secundário - nesse caso, de cima para baixo */
+  align-items: center; /* no centro do eixo secundário */
+  align-items: baseline; /* alinha baseado na "linha do conteúdo" dentro do elemento */
+
+  /* -------------------------------- */
+
+  /* align-content - controla o espaço entre os elementos depois de um flex-wrap */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+
+  /* -------------------------------- */
+
+  /* align-self - semelhante ao align-itens, única diferença é que se aplica a mundança a apenas um elemento */
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* div nth-of-type(3) */
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  flex-basis: 400px;
+}
+
+div:nth-of-type(3) {
+  align-self: flex-end;
+}
