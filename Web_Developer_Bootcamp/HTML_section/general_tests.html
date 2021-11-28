@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>Entities</h3>
+	<a href="https://dev.w3.org/html5/html-author/charref">Códigos de referência</a>
+	<p>Errado: 1 < 6</p>
+	<p>Certo: 1 &lt; 6</p>
+	<p>"&lt;" é um caracter reservado do html, melhor usar uma entidade</p><br>
+	<hr>
+	<h3>Semantic markups</h3>
+	<p>Utilizar código html no qual o uso dos elementos seja mais explicitado. Ou seja...</p><br>
+	<strong><p>Não fazer assim:</p></strong><br>
+	<div class="nav">
+	</div>
+	<div class="header">
+		<div class="title">Lorem ipsum dolor sit amet</div>
+	</div>
+	<div class="article">
+		<div class="section">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat
+		</div>
+		<div class="section">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat
+		</div>
+	</div>
+	<div class="footer">
+		footer
+	</div>
+	<strong><p>Fazer assim:</p></strong><br>
+	<nav>
+	</nav>
+	<header>
+		<title>Lorem ipsum dolor sit amet</title>
+	</header>
+	<article>
+		<section>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat
+		</section>
+		<section>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat
+		</section>
+	</article>
+	<footer>
+		footer	
+	</footer>
+	<br>
+	<p>Uma lista de tagzinhas pra usar ao invés de divs(pesquisar por mais informação delas no MDN se necessário):</p><br>
+	<ul>
+		<li>main</li>
+		<li>nav</li>
+		<li>section</li>
+		<li>article</li>
+		<li>header</li>
+		<li>footer</li>
+		<li>aside</li>
+		<li>summary</li>
+		<li>details</li>
+	</ul>
+
+</body>
+</html>
