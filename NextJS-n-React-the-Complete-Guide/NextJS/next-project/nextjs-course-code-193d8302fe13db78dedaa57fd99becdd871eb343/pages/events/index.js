@@ -1,9 +1,7 @@
 import React from "react";
 import useRouter from "next/router";
-
 import EventList from "../../components/events/events-list";
 import EventsSearch from "../../components/events/events-search";
-
 import { getAllEvents } from "../../dummy-data";
 
 const AllEventsPage = () => {
